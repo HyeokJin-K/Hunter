@@ -13,7 +13,6 @@ public class CameraMove : MonoBehaviour
     [Tooltip("얼마나 오래 카메라 떨림(쉐이크)이 나타날지 설정하는 시간 값")]
     public float cameraShakeTime = 0.8f;
     
-
     float rotateX;
     float rotateY;
 
@@ -23,7 +22,6 @@ public class CameraMove : MonoBehaviour
         targetTransform = targetTransform == null ? GameObject.Find("Player").transform : targetTransform;
         pos = targetTransform.position;
     }
-
     
     void Update()
     {
@@ -33,21 +31,29 @@ public class CameraMove : MonoBehaviour
             rotateY += Input.GetAxisRaw("Mouse Y") * cameraRotateSpeed;
         }
 
-        distance += Input.GetAxisRaw("Mouse ScrollWheel");
+        distance += -Input.GetAxis("Mouse ScrollWheel");
 
         rotateY = Mathf.Clamp(rotateY, -60f, 60f);
         distance = Mathf.Clamp(distance, 1.5f, 4.5f);
 
         //  카메라가 부드럽게 따라가는 코드
-        //pos = Vector3.Lerp(pos, targetTransform.position, 2.0f * Time.deltaTime);
+        pos = Vector3.Lerp(pos, targetTransform.position, 5.0f * Time.fixedDeltaTime);
         //  정확하게 따라가는 코드
-        pos = targetTransform.position;
+        //pos = targetTransform.position;
     }
-
     
     private void LateUpdate()
     {                
         transform.rotation = Quaternion.Euler(-rotateY, rotateX, 0);                
         transform.position = pos + transform.rotation * new Vector3(0, 1, -distance);
+    }
+
+    /// <summary>
+    /// 추적 대상을 현재 대상에서 인자 값으로 받아온 타켓 트랜스폼으로 바꾸는 함수
+    /// </summary>
+    /// <param name="target"></param>
+    public void ChangeTarget(Transform target)
+    {
+        targetTransform = target;
     }
 }

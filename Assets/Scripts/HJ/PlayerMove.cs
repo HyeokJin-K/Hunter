@@ -4,10 +4,8 @@ using UnityEngine;
 
 //  플레이어 이동 스크립트
 [RequireComponent(typeof(CharacterController))]
-[RequireComponent(typeof(PlayerStats))]
-public class PlayerMove : MonoBehaviour
-{    
-    PlayerStats playerStats;
+public class PlayerMove : PlayerStats
+{        
     CharacterController playerController;
     
     Vector3 move;
@@ -23,18 +21,18 @@ public class PlayerMove : MonoBehaviour
     float totalMoveSpeed;    
 
     void Start()
-    {
-        playerStats = GetComponent<PlayerStats>();
-        playerController = GetComponent<CharacterController>();                 
+    {        
+        playerController = GetComponent<CharacterController>();
 
-        totalMoveSpeed = playerStats.moveSpeed;
+        totalMoveSpeed = moveSpeed;
     }
 
     void Update()
     {
         //  WASD 조작
-        if (!playerStats.attackStateCheck) move = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        if (!attackStateCheck) move = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         else move = Vector3.zero;
+
         //  카메라를 기준으로 회전
         move = Camera.main.transform.TransformDirection(move);
         move.Normalize();
@@ -43,7 +41,7 @@ public class PlayerMove : MonoBehaviour
         {                          
             //  이동 조작을 입력받았는지를 체크하는 moveCheck 활성화
             moveCheck = true;
-            playerStats.moveStateCheck = true;
+            moveStateCheck = true;
             if (moveCheck) rotate = Quaternion.LookRotation(new Vector3(move.x, 0, move.z));
 
             //  왼쪽 Shift키 입력시 달리기 함수 실행
@@ -53,16 +51,16 @@ public class PlayerMove : MonoBehaviour
             }
             else
             {
-                playerStats.dashStateCheck = false;
-                totalMoveSpeed = playerStats.moveSpeed;
+                dashStateCheck = false;
+                totalMoveSpeed = moveSpeed; ;
                 rotateSpeed = 5.0f;                
             }
         }
         else
         {
             moveCheck = false;
-            playerStats.moveStateCheck = false;
-            playerStats.dashStateCheck = false;
+            moveStateCheck = false;
+            dashStateCheck = false;
         }        
 
         //  달리기 도중 이동 방향과 바라보는 방향의 각도가 일정 이상 차이가 있을 경우 회전 후 이동하게 한다.
@@ -91,9 +89,9 @@ public class PlayerMove : MonoBehaviour
 
     void MoveDash()
     {
-        playerStats.dashStateCheck = true;
+        dashStateCheck = true;
         rotateSpeed = 10.0f;
-        totalMoveSpeed = playerStats.sprintMoveSpeed * playerStats.moveSpeed;
+        totalMoveSpeed = sprintMoveSpeed * moveSpeed;
     }
    
     IEnumerator RotateDash()
@@ -107,8 +105,8 @@ public class PlayerMove : MonoBehaviour
         {
             rotateSpeed = 12f;
             moveCheck = false;
-            playerStats.moveStateCheck = false;
-            playerStats.dashStateCheck = false;
+            moveStateCheck = false;
+            dashStateCheck = false;
             t += Time.deltaTime;
             yield return null;
         }

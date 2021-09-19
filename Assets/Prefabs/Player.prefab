@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 8269455438797454202}
   - component: {fileID: 8269455438797454203}
   - component: {fileID: 1873336652}
-  - component: {fileID: 8433394914466869754}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -148,6 +147,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558b132174031b549ade76e4de96d7d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHP: 100
+  maxMP: 100
+  moveSpeed: 2
+  sprintMoveSpeed: 2
+  attackPower: 5
+  attackStateCheck: 0
+  moveStateCheck: 0
+  dashStateCheck: 0
 --- !u!114 &1873336652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,23 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   am: {fileID: 5335188459764225566}
---- !u!114 &8433394914466869754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8269455438797454195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba9be32f6b26e1419e7e5d32bd87953, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHP: 100
-  maxMP: 100
-  moveSpeed: 2
-  sprintMoveSpeed: 1.7
-  attackStateCheck: 0
+  ps: {fileID: 0}
 --- !u!1001 &5429449431500245474
 PrefabInstance:
   m_ObjectHideFlags: 0

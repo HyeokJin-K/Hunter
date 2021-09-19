@@ -1,0 +1,958 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1237; Version 2009; 64bit' Language: 'ko' Physical Memory: 16326 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Hunter
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+12403
+Successfully changed project path to: C:/Hunter
+C:/Hunter
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 31.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Hunter/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   30.0.14.7196
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56596
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003505 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 27.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.122 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006134 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.055 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1403 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.4 MB.
+System memory in use after: 66.5 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1836.
+Total: 2.173700 ms (FindLiveObjects: 0.140200 ms CreateObjectMapping: 0.047400 ms MarkObjects: 1.891800 ms  DeleteObjects: 0.093300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Animations/Player/Great Sword Idle.anim
+  artifactKey: Guid(7d74fefe949bd974c8895fd4ccc0cf89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle.anim using Guid(7d74fefe949bd974c8895fd4ccc0cf89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96262dab0363ae385976157f17e672eb') in 0.046889 seconds 
+  Import took 0.050728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.015189 seconds.
+  path: Assets/Animations/Player/PlayerController.controller
+  artifactKey: Guid(6a06de0aedf6f9e4ebfbddbadcba20e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/PlayerController.controller using Guid(6a06de0aedf6f9e4ebfbddbadcba20e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d47ad38318c9c123161228fe217ce85') in 0.023872 seconds 
+  Import took 0.026267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.657203 seconds.
+  path: Assets/Animations/Player
+  artifactKey: Guid(142eff8797d6caa438cd6f4759185695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player using Guid(142eff8797d6caa438cd6f4759185695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1889bc726bcdcc878a64de9e8ab00b1') in 0.004014 seconds 
+  Import took 0.006571 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006120 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.981 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.3 MB.
+System memory in use after: 66.3 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1838.
+Total: 2.574300 ms (FindLiveObjects: 0.528500 ms CreateObjectMapping: 0.140300 ms MarkObjects: 1.852400 ms  DeleteObjects: 0.052100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 11.288410 seconds.
+  path: Assets/Animations/Player/New Avatar Mask.mask
+  artifactKey: Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/New Avatar Mask.mask using Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98d07d362309700e3c7c3369da325fc') in 0.017333 seconds 
+  Import took 0.019535 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005670 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.3 MB.
+System memory in use after: 66.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1840.
+Total: 2.285900 ms (FindLiveObjects: 0.161300 ms CreateObjectMapping: 0.055400 ms MarkObjects: 2.013600 ms  DeleteObjects: 0.054300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 203.268140 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx
+  artifactKey: Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx using Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442ac793b19937d39d3f4f724953a7f6') in 0.181266 seconds 
+  Import took 0.184190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.265720 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx
+  artifactKey: Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx using Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5407afd84e6f02acfd934e3cdd1dcbc') in 0.072324 seconds 
+  Import took 0.075193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.743315 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx
+  artifactKey: Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx using Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85d31c03be1c6118ab92aa012c60f56') in 0.069644 seconds 
+  Import took 0.072571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.865413 seconds.
+  path: Assets/Materials/Mat_TestGround.mat
+  artifactKey: Guid(17cb7cd15ca2e434fac36d85e0e6ec61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Mat_TestGround.mat using Guid(17cb7cd15ca2e434fac36d85e0e6ec61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eadb571321ad4c5d129a5352fce9a73d') in 0.025923 seconds 
+  Import took 0.028151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_1/Mat_warrior_belt.mat
+  artifactKey: Guid(1c6428e8272311749bee340ad6e69b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_1/Mat_warrior_belt.mat using Guid(1c6428e8272311749bee340ad6e69b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1a5af2bd5d8b0e448e8548edd1e3bb4') in 0.490900 seconds 
+  Import took 0.510518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_eyelashes1.mat
+  artifactKey: Guid(71e8b7081dd8bc94a8fdd1da415cc680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_eyelashes1.mat using Guid(71e8b7081dd8bc94a8fdd1da415cc680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9b61ffdd44d96028a4e1be70b9ea6e') in 0.011039 seconds 
+  Import took 0.013354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_cuirass.mat
+  artifactKey: Guid(2a9cf01a75d0e5549aa32a4256691a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_cuirass.mat using Guid(2a9cf01a75d0e5549aa32a4256691a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ecdd6a079930d4727ef0d7ddbaaddc') in 0.073547 seconds 
+  Import took 0.080706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_1/Mat_warrior_body.mat
+  artifactKey: Guid(d82ab73dc1b3bba4f80316aa12cb486e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_1/Mat_warrior_body.mat using Guid(d82ab73dc1b3bba4f80316aa12cb486e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3023b2f16f3820b38298820da30bd6a') in 0.359295 seconds 
+  Import took 0.377263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_3/Materials/Mat_warrior_belt.mat
+  artifactKey: Guid(ccf362850fb8647449aab4b0856eba32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_3/Materials/Mat_warrior_belt.mat using Guid(ccf362850fb8647449aab4b0856eba32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7465f4a809a1e14d0a610687367698d4') in 0.011963 seconds 
+  Import took 0.014275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_belt.mat
+  artifactKey: Guid(44ee4f497d434174c85adef5c2686ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_belt.mat using Guid(44ee4f497d434174c85adef5c2686ad2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ddcd8267ac7d0399e071bab570cead0') in 0.011247 seconds 
+  Import took 0.013542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_3/Mat_warrior_belt.mat
+  artifactKey: Guid(0294833696f97614c928063ef95ca9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_3/Mat_warrior_belt.mat using Guid(0294833696f97614c928063ef95ca9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a10dbe3a7573c44fb803bc5bffcba91') in 0.388746 seconds 
+  Import took 0.408417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_3/Mat_warrior_Beard1.mat
+  artifactKey: Guid(b6325acbbd021674ab05d8626e371337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_3/Mat_warrior_Beard1.mat using Guid(b6325acbbd021674ab05d8626e371337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fe7bcb42c54f326df9c480892cc8529') in 0.036672 seconds 
+  Import took 0.042677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_1/Mat_warrior_Beard1.mat
+  artifactKey: Guid(1f468c840eb98c94f988f694b0c13776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_1/Mat_warrior_Beard1.mat using Guid(1f468c840eb98c94f988f694b0c13776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3443924d32df5490554703bf9cb1ae1e') in 0.036553 seconds 
+  Import took 0.041042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_1/Mat_warrior_eyelashes1.mat
+  artifactKey: Guid(65301f15916f2f343a2397facf6b0be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_1/Mat_warrior_eyelashes1.mat using Guid(65301f15916f2f343a2397facf6b0be8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c613641e1426e818fb4865d979a7b4b') in 0.013727 seconds 
+  Import took 0.017273 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_belt.mat
+  artifactKey: Guid(1588570f7f34220419796fce36863eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_belt.mat using Guid(1588570f7f34220419796fce36863eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728a22f264c9e2320a76f3bfe280d427') in 0.496211 seconds 
+  Import took 0.516130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_3/Materials/Mat_warrior_Beard1.mat
+  artifactKey: Guid(a41e0f25073ab7e4693323d6f93a9757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_3/Materials/Mat_warrior_Beard1.mat using Guid(a41e0f25073ab7e4693323d6f93a9757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e9363e868ce3a41659c92cf8c45896') in 0.010924 seconds 
+  Import took 0.013292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_3/Materials/Mat_warrior_eyelashes1.mat
+  artifactKey: Guid(9c1f8a2db87c40241a6b5af4ca8d7087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_3/Materials/Mat_warrior_eyelashes1.mat using Guid(9c1f8a2db87c40241a6b5af4ca8d7087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5b01b4d597cbbe4940e6f131798a85') in 0.010360 seconds 
+  Import took 0.012908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Materials/Mat_TestGround.mat
+  artifactKey: Guid(17cb7cd15ca2e434fac36d85e0e6ec61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Mat_TestGround.mat using Guid(17cb7cd15ca2e434fac36d85e0e6ec61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eadb571321ad4c5d129a5352fce9a73d') in 0.010497 seconds 
+  Import took 0.012854 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_1/Materials/Mat_warrior_Beard1.mat
+  artifactKey: Guid(9ec56bc18bd4aa84b84c09139920bbc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_1/Materials/Mat_warrior_Beard1.mat using Guid(9ec56bc18bd4aa84b84c09139920bbc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7a1b73d224bf0ac4693bd9ef19d3ac') in 0.011010 seconds 
+  Import took 0.013607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000395 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_3/Mat_warrior_body.mat
+  artifactKey: Guid(db36a1cd714d5dd4596ff12b00e3df81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_3/Mat_warrior_body.mat using Guid(db36a1cd714d5dd4596ff12b00e3df81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea42f3184298816c70e53c18cda5eb19') in 0.288853 seconds 
+  Import took 0.305456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_Bracer.mat
+  artifactKey: Guid(65ce4583a6c555641aed668a9c20c91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_Bracer.mat using Guid(65ce4583a6c555641aed668a9c20c91a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9523a2826fa18b0b522392ea3ec8a2cb') in 0.009526 seconds 
+  Import took 0.013240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_body.mat
+  artifactKey: Guid(63a8ca44b8830b14db8fef624f09be32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_body.mat using Guid(63a8ca44b8830b14db8fef624f09be32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81aea92fac1138dcd2d2e4a562c6b490') in 0.261232 seconds 
+  Import took 0.277867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_1/Materials/Mat_warrior_belt.mat
+  artifactKey: Guid(695e117253cd4334091659ff53cd5f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_1/Materials/Mat_warrior_belt.mat using Guid(695e117253cd4334091659ff53cd5f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd541fb104480be147867fe8f795706df') in 0.010559 seconds 
+  Import took 0.012879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_Beard1.mat
+  artifactKey: Guid(bb54b2c144efa6e4cb4d3331e403ce34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_Beard1.mat using Guid(bb54b2c144efa6e4cb4d3331e403ce34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81c3d605eb21e4f5863491502a111108') in 0.009046 seconds 
+  Import took 0.011339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_Beard1.mat
+  artifactKey: Guid(f89a010516b7ae241bd14c2a8faa2d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_Beard1.mat using Guid(f89a010516b7ae241bd14c2a8faa2d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966b86b45dc6c547dccfc098d0147428') in 0.039042 seconds 
+  Import took 0.043523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_1/Materials/Mat_warrior_body.mat
+  artifactKey: Guid(c83a0fe2a67cf8649b53eb245ede2830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_1/Materials/Mat_warrior_body.mat using Guid(c83a0fe2a67cf8649b53eb245ede2830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c52a7257e44889f6ded7b566733c06') in 0.009760 seconds 
+  Import took 0.011978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_3/Materials/Mat_warrior_body.mat
+  artifactKey: Guid(510bc07830649d14a8137bdc9d8d6a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_3/Materials/Mat_warrior_body.mat using Guid(510bc07830649d14a8137bdc9d8d6a54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3611f4cacff925a1a97df6ad4d71fcf') in 0.010084 seconds 
+  Import took 0.012150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_body.mat
+  artifactKey: Guid(edfb7b2dc7555fb489df23572e5863a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_body.mat using Guid(edfb7b2dc7555fb489df23572e5863a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c20e172d092baac958c69a346f2de0f') in 0.009965 seconds 
+  Import took 0.012102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_cuirass.mat
+  artifactKey: Guid(de4db752fb3c0764993e0e89124cb349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Materials/Mat_warrior_cuirass.mat using Guid(de4db752fb3c0764993e0e89124cb349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d72f0e17879f527c18105102dbacfc') in 0.008540 seconds 
+  Import took 0.010757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_Bracer.mat
+  artifactKey: Guid(708c2092b8f4cda49ba11bda116dddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_2/Mat_warrior_Bracer.mat using Guid(708c2092b8f4cda49ba11bda116dddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31443fbefdfa40f77ef7d867bb3b9304') in 0.075422 seconds 
+  Import took 0.081336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.761686 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx
+  artifactKey: Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx using Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ad033b1b9339297a49ddc54e17290b') in 0.074072 seconds 
+  Import took 0.076932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.356137 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx
+  artifactKey: Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2 1.fbx using Guid(a70d65fc1df4ca14a8f636cce345b83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e5c6acf675f69174ff3b578bcd0f38') in 0.071844 seconds 
+  Import took 0.074760 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005906 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.979 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.5 MB.
+System memory in use after: 83.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1886.
+Total: 2.020800 ms (FindLiveObjects: 0.150800 ms CreateObjectMapping: 0.044400 ms MarkObjects: 1.766100 ms  DeleteObjects: 0.058700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 393.352678 seconds.
+  path: Assets/Animations/Player/Great Sword Idle (1).fbx
+  artifactKey: Guid(5a542f5eaca543549956f6045fd215a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle (1).fbx using Guid(5a542f5eaca543549956f6045fd215a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb4f6c8142d66f4ae3cc8b42e27715d') in 0.030356 seconds 
+  Import took 0.034418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000903 seconds.
+  path: Assets/Animations/Player/Great Sword Idle (1).fbx
+  artifactKey: Guid(5a542f5eaca543549956f6045fd215a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle (1).fbx using Guid(5a542f5eaca543549956f6045fd215a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb4f6c8142d66f4ae3cc8b42e27715d') in 0.006561 seconds 
+  Import took 0.008918 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.484938 seconds.
+  path: Assets/Animations/Player/Great Sword Idle (1).fbx
+  artifactKey: Guid(5a542f5eaca543549956f6045fd215a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle (1).fbx using Guid(5a542f5eaca543549956f6045fd215a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9939ba7636b4444ec94e3fdd2bfd97') in 0.007541 seconds 
+  Import took 0.010157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Animations/Player/Great Sword Idle (1).fbx
+  artifactKey: Guid(5a542f5eaca543549956f6045fd215a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle (1).fbx using Guid(5a542f5eaca543549956f6045fd215a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f9939ba7636b4444ec94e3fdd2bfd97') in 0.006215 seconds 
+  Import took 0.009144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.069575 seconds.
+  path: Assets/Animations/Player/mixamo.com.anim
+  artifactKey: Guid(112cf89ca201798458347bc2702607b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/mixamo.com.anim using Guid(112cf89ca201798458347bc2702607b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4700088ba441990d88bb27b62297421a') in 0.010845 seconds 
+  Import took 0.014189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013333 seconds.
+  path: Assets/Animations/Player/mixamo.com.anim
+  artifactKey: Guid(112cf89ca201798458347bc2702607b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/mixamo.com.anim using Guid(112cf89ca201798458347bc2702607b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4700088ba441990d88bb27b62297421a') in 0.011255 seconds 
+  Import took 0.013602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 111.769928 seconds.
+  path: Assets/AssetStore/Warrior/Prefab/Skin_2.prefab
+  artifactKey: Guid(10e21597f32349e4b8d972ab5f7ae6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Prefab/Skin_2.prefab using Guid(10e21597f32349e4b8d972ab5f7ae6fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e886178a01eabf74222975db8480a480') in 1.065410 seconds 
+  Import took 1.116475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.188836 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx
+  artifactKey: Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx using Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1356ff31691dac2f00ba26924b98a4c') in 0.092484 seconds 
+  Import took 0.095300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.258649 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx
+  artifactKey: Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx using Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94f10d1772ec50c3a8dcb22dcbde1ac') in 0.073759 seconds 
+  Import took 0.076665 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.868851 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx
+  artifactKey: Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx using Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1faf81d5d62eb893d42d91432550e31f') in 0.074436 seconds 
+  Import took 0.077270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.577635 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_3/Skin_3.fbx
+  artifactKey: Guid(a553c970c672f12499cc057ab03e57a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_3/Skin_3.fbx using Guid(a553c970c672f12499cc057ab03e57a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f66fca96be2f79d4f573eefb6e391b') in 0.059474 seconds 
+  Import took 0.062575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.039822 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_3/Skin_3Avatar.asset
+  artifactKey: Guid(cd60991a492e2044bba448d3dc219d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_3/Skin_3Avatar.asset using Guid(cd60991a492e2044bba448d3dc219d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6358221bebdc472ba0515e9a57fd0f0') in 0.008252 seconds 
+  Import took 0.011936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005973 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_3/Skin_3Avatar.asset
+  artifactKey: Guid(cd60991a492e2044bba448d3dc219d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_3/Skin_3Avatar.asset using Guid(cd60991a492e2044bba448d3dc219d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6358221bebdc472ba0515e9a57fd0f0') in 0.005179 seconds 
+  Import took 0.007422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.464284 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx
+  artifactKey: Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx using Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed2a977daf3eca24c105f1320fcb77af') in 0.071343 seconds 
+  Import took 0.074326 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006005 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.984 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.8 MB.
+System memory in use after: 83.8 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1889.
+Total: 2.073600 ms (FindLiveObjects: 0.146300 ms CreateObjectMapping: 0.044100 ms MarkObjects: 1.822600 ms  DeleteObjects: 0.059700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 86.663854 seconds.
+  path: Assets/Animations/Player/mixam.anim
+  artifactKey: Guid(112cf89ca201798458347bc2702607b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/mixam.anim using Guid(112cf89ca201798458347bc2702607b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aebede45e947041da6f29e5b037c6e1b') in 0.021846 seconds 
+  Import took 0.024281 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006168 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.976 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.8 MB.
+System memory in use after: 83.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1891.
+Total: 2.177900 ms (FindLiveObjects: 0.197300 ms CreateObjectMapping: 0.067000 ms MarkObjects: 1.857100 ms  DeleteObjects: 0.055600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 36.117384 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx
+  artifactKey: Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx using Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5fbd6ed619637bd9d9eac380846c077') in 0.146871 seconds 
+  Import took 0.149944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.036684 seconds.
+  path: Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx
+  artifactKey: Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Base mesh/Skin_2/Skin_2.fbx using Guid(2a2cceced2ac25f46ae3fdefa1ca2c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5fbd6ed619637bd9d9eac380846c077') in 0.071647 seconds 
+  Import took 0.074623 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005796 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.8 MB.
+System memory in use after: 83.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1894.
+Total: 2.604400 ms (FindLiveObjects: 0.185400 ms CreateObjectMapping: 0.071700 ms MarkObjects: 2.292300 ms  DeleteObjects: 0.053800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 191.728036 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_2
+  artifactKey: Guid(292098aecc8623042a707157e52c2cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_2 using Guid(292098aecc8623042a707157e52c2cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7ff69ca4a0d7cf9e44179111056793') in 0.005186 seconds 
+  Import took 0.007470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004738 seconds.
+  path: Assets/AssetStore/Warrior/Materials/Skin_2
+  artifactKey: Guid(292098aecc8623042a707157e52c2cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Materials/Skin_2 using Guid(292098aecc8623042a707157e52c2cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7ff69ca4a0d7cf9e44179111056793') in 0.003946 seconds 
+  Import took 0.006136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.008632 seconds.
+  path: Assets/AssetStore/Warrior/Texture/Skin_2
+  artifactKey: Guid(c45584d7df2ba9146948e4e056e8cab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Texture/Skin_2 using Guid(c45584d7df2ba9146948e4e056e8cab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b34b25ce163c00cf7adc1c8f3e828f7') in 0.004866 seconds 
+  Import took 0.007234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008063 seconds.
+  path: Assets/AssetStore/Warrior/Texture/Skin_2
+  artifactKey: Guid(c45584d7df2ba9146948e4e056e8cab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AssetStore/Warrior/Texture/Skin_2 using Guid(c45584d7df2ba9146948e4e056e8cab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b34b25ce163c00cf7adc1c8f3e828f7') in 0.003485 seconds 
+  Import took 0.006127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.490695 seconds.
+  path: Assets/Animations/Player/Great Sword Idle (2).fbx
+  artifactKey: Guid(8609109d9b9de024c9334ef35e222a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle (2).fbx using Guid(8609109d9b9de024c9334ef35e222a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29044eaf43c44b85c1dfd9d22a6e5b6') in 0.027744 seconds 
+  Import took 0.032170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006722 seconds.
+  path: Assets/Animations/Player/Great Sword Idle (2).fbx
+  artifactKey: Guid(8609109d9b9de024c9334ef35e222a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle (2).fbx using Guid(8609109d9b9de024c9334ef35e222a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd29044eaf43c44b85c1dfd9d22a6e5b6') in 0.007108 seconds 
+  Import took 0.009632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.010780 seconds.
+  path: Assets/Animations/Player/Great Sword Idle (2).fbx
+  artifactKey: Guid(8609109d9b9de024c9334ef35e222a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle (2).fbx using Guid(8609109d9b9de024c9334ef35e222a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd6beef327bce538031b76738a76fd2') in 0.006804 seconds 
+  Import took 0.009300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000898 seconds.
+  path: Assets/Animations/Player/Great Sword Idle (2).fbx
+  artifactKey: Guid(8609109d9b9de024c9334ef35e222a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Great Sword Idle (2).fbx using Guid(8609109d9b9de024c9334ef35e222a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edd6beef327bce538031b76738a76fd2') in 0.006366 seconds 
+  Import took 0.008886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.976614 seconds.
+  path: Assets/Animations/Player/mixamo.com.anim
+  artifactKey: Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/mixamo.com.anim using Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658c98a76f8fbc6a99755da54c278f3c') in 0.008982 seconds 
+  Import took 0.011254 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018258 seconds.
+  path: Assets/Animations/Player/mixamo.com.anim
+  artifactKey: Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/mixamo.com.anim using Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658c98a76f8fbc6a99755da54c278f3c') in 0.007453 seconds 
+  Import took 0.009937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.319492 seconds.
+  path: Assets/Animations/Player/mixam.anim
+  artifactKey: Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/mixam.anim using Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ebf0a9dce6464ef83664a799c908eb') in 0.011644 seconds 
+  Import took 0.013955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005397 seconds.
+  path: Assets/Animations/Player/mixam.anim
+  artifactKey: Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/mixam.anim using Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24ebf0a9dce6464ef83664a799c908eb') in 0.011168 seconds 
+  Import took 0.013388 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006002 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.980 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.8 MB.
+System memory in use after: 83.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1896.
+Total: 2.276200 ms (FindLiveObjects: 0.204800 ms CreateObjectMapping: 0.045100 ms MarkObjects: 1.917000 ms  DeleteObjects: 0.108200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 39.604953 seconds.
+  path: Assets/Animations/Player/AttackReady.anim
+  artifactKey: Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/AttackReady.anim using Guid(cc6e259900dd3794491c21b12eb23ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a96b5cf849c9465134f1f73db37285') in 0.021531 seconds 
+  Import took 0.025974 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1540.654660 seconds.
+  path: Assets/Animations/Player/PlayerController.controller
+  artifactKey: Guid(6a06de0aedf6f9e4ebfbddbadcba20e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/PlayerController.controller using Guid(6a06de0aedf6f9e4ebfbddbadcba20e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c22df11aef542b114dcaeeb454dcee7') in 0.037748 seconds 
+  Import took 0.040705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.175139 seconds.
+  path: Assets/Animations/Player/New Avatar Mask.mask
+  artifactKey: Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/New Avatar Mask.mask using Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3511fe16caf37a67c9fc9517fe42f4') in 0.004695 seconds 
+  Import took 0.007356 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011778 seconds.
+  path: Assets/Animations/Player/New Avatar Mask.mask
+  artifactKey: Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/New Avatar Mask.mask using Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3511fe16caf37a67c9fc9517fe42f4') in 0.004190 seconds 
+  Import took 0.006342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.244685 seconds.
+  path: Assets/Animations/Player/Bust Player Mask.mask
+  artifactKey: Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Bust Player Mask.mask using Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe0f731bddcb4743a4c5ef6f9396209') in 0.004933 seconds 
+  Import took 0.007411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010470 seconds.
+  path: Assets/Animations/Player/Bust Player Mask.mask
+  artifactKey: Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/Bust Player Mask.mask using Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fe0f731bddcb4743a4c5ef6f9396209') in 0.004340 seconds 
+  Import took 0.006546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.573728 seconds.
+  path: Assets/Animations/Player/BustPlayerMask.mask
+  artifactKey: Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/BustPlayerMask.mask using Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805d6de060df661c05d4b96d40440bf9') in 0.004763 seconds 
+  Import took 0.007193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010966 seconds.
+  path: Assets/Animations/Player/BustPlayerMask.mask
+  artifactKey: Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/BustPlayerMask.mask using Guid(263b26e1cfe824f42a492f0ce6987fe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805d6de060df661c05d4b96d40440bf9') in 0.004435 seconds 
+  Import took 0.006773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.803051 seconds.
+  path: Assets/Animations/Player/BustPlayerAvatar.mask
+  artifactKey: Guid(5a34cdf2b88e32a45bace47d477d1914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/BustPlayerAvatar.mask using Guid(5a34cdf2b88e32a45bace47d477d1914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2ada0833e5332886477a8794c5efc3') in 0.004586 seconds 
+  Import took 0.006937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012050 seconds.
+  path: Assets/Animations/Player/BustPlayerAvatar.mask
+  artifactKey: Guid(5a34cdf2b88e32a45bace47d477d1914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Player/BustPlayerAvatar.mask using Guid(5a34cdf2b88e32a45bace47d477d1914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f2ada0833e5332886477a8794c5efc3') in 0.003926 seconds 
+  Import took 0.006111 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008384 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.969 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.8 MB.
+System memory in use after: 83.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1898.
+Total: 1.746800 ms (FindLiveObjects: 0.132200 ms CreateObjectMapping: 0.039100 ms MarkObjects: 1.524300 ms  DeleteObjects: 0.050300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005777 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.977 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1397 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.8 MB.
+System memory in use after: 83.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1900.
+Total: 2.257800 ms (FindLiveObjects: 0.203200 ms CreateObjectMapping: 0.088400 ms MarkObjects: 1.888400 ms  DeleteObjects: 0.076600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  requireTextureImportCompression: false -> true
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

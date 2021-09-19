@@ -6,15 +6,15 @@ public class PlayerAnimation : MonoBehaviour
 {
     [Tooltip("플레이어의 애니메이터 컴포넌트를 담을 변수")]
     public Animator am;
-    [Tooltip("플레이어의 PlayerStats 컴포넌트를 담을 변수")]
-    public PlayerStats ps;
+    [Tooltip("플레이어의 PlayerMove 컴포넌트를 담을 변수")]
+    public PlayerMove ps;
 
     float aniValue;
 
     void Start()
     {
         if (am == null) am = GetComponentInChildren<Animator>();
-        if (ps == null) ps = GetComponent<PlayerStats>();
+        if (ps == null) ps = GetComponent<PlayerMove>();
     }
 
     // Update is called once per frame
