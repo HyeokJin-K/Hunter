@@ -23,14 +23,19 @@ public class PlayerAnimation : MonoBehaviour
 
         if (ps.moveStateCheck)
         {
-            if (ps.dashStateCheck)
-                aniValue = Mathf.Lerp(aniValue, 1f, Time.deltaTime * 2.0f);            
-            else
-                aniValue = Mathf.Lerp(aniValue, 0.5f, Time.deltaTime * 7.0f);
+            PlayerMoveAni();
         }
         else
             aniValue = Mathf.Lerp(aniValue, 0f, Time.deltaTime * 7.0f);
 
         am.SetFloat("MoveAni", aniValue);
+    }
+
+    void PlayerMoveAni()
+    {
+        if (ps.dashStateCheck)
+            aniValue = Mathf.Lerp(aniValue, 1f, Time.deltaTime * 2.0f);
+        else
+            aniValue = Mathf.Lerp(aniValue, 0.5f, Time.deltaTime * 7.0f);
     }
 }

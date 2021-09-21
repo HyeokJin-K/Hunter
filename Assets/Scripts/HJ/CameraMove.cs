@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraMove : MonoBehaviour
-{
+{    
     [Tooltip("추적할 대상의 Transform")]
     public Transform targetTransform;
     [Tooltip("카메라와 타겟 사이의 거리 값")]
@@ -36,8 +36,12 @@ public class CameraMove : MonoBehaviour
         rotateY = Mathf.Clamp(rotateY, -60f, 60f);
         distance = Mathf.Clamp(distance, 1.5f, 4.5f);
 
-        //  카메라가 부드럽게 따라가는 코드
-        pos = Vector3.Lerp(pos, targetTransform.position, 5.0f * Time.fixedDeltaTime);
+    }
+    
+    void FixedUpdate()
+    {
+        //  카메라가 부드럽게 따라가는 코드        
+        pos = Vector3.Lerp(pos, targetTransform.position, 10f * Time.fixedDeltaTime);
         //  정확하게 따라가는 코드
         //pos = targetTransform.position;
     }

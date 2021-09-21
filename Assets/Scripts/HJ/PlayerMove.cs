@@ -93,7 +93,7 @@ public class PlayerMove : PlayerStats
         rotateSpeed = 10.0f;
         totalMoveSpeed = sprintMoveSpeed * moveSpeed;
     }
-   
+    
     IEnumerator RotateDash()
     {
         float t = 0;
