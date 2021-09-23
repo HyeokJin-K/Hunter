@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public delegate void mydele();
 
@@ -15,7 +16,8 @@ public class PlayerAttack : MonoBehaviour
     public PlayerMove pm;
 
     bool weaponColCheck;
-    //  true일 경우에만 공격 입력을 받게하는 bool 변수
+    //  true일 경우에만 공격 입력을 받게하는 bool 변수    
+    [HideInInspector]
     public bool attackInputChance;
 
 
@@ -27,15 +29,23 @@ public class PlayerAttack : MonoBehaviour
         attackInputChance = true;
 
         StartCoroutine(CheckAttackInputChance());
+        StartCoroutine(CheckAttackReadyState());
     }
 
     void Update()
     {
+
         //  마우스 좌클릭시 해머 공격 패턴 1 시작
         if (Input.GetMouseButtonDown(0))
         {
-            HammerSwingPattern1();   
+            HammerSwingPattern1();            
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            StartCoroutine(SheatheWeapon());
+        }
+
     }
 
     void TurnOnAttack()
@@ -52,14 +62,14 @@ public class PlayerAttack : MonoBehaviour
     //  좌클릭을 계속 할 경우 해머 공격 패턴 1 연계
     void HammerSwingPattern1()
     {
-        if (am.GetCurrentAnimatorStateInfo(1).IsName("AttackReady") && attackInputChance)
-        {
-                am.SetBool("AttackBool", true);
-                attackInputChance = false;
+        if (am.GetCurrentAnimatorStateInfo(1).IsName("BattleReady") && attackInputChance)
+        {           
+            am.SetBool("AttackBool", true);
+            attackInputChance = false;            
         }
     }
 
-    //  발도 상태일 때는 공격입력 구간을 항상 On으로 하는 함수
+    //  공격 상태가 아니면 공격입력 구간을 항상 On으로 하는 함수
     //  공격중일 때는 PlayerMove의 attackStateCheck변수를 true로 하여 움직이지 못하게 함.
     IEnumerator CheckAttackInputChance()
     {
@@ -67,8 +77,8 @@ public class PlayerAttack : MonoBehaviour
         {
             if (am.GetCurrentAnimatorStateInfo(2).IsName("SwingReady"))
             {
-                attackInputChance = true;
                 pm.attackStateCheck = false;
+                attackInputChance = true;
             }
             else if (!am.GetCurrentAnimatorStateInfo(2).IsName("SwingReady"))
             {
@@ -76,5 +86,40 @@ public class PlayerAttack : MonoBehaviour
             }
             yield return null;
         }
+    }
+
+    //  무기를 꺼내든 상태인지 체크하는 함수
+    IEnumerator CheckAttackReadyState()
+    {
+        while (true)
+        {
+            if (am.GetCurrentAnimatorStateInfo(1).IsName("BattleReady"))
+            {
+                pm.battleReadyCheck = true;
+            }
+            else if (!am.GetCurrentAnimatorStateInfo(1).IsName("BattleReady"))
+            {
+                pm.battleReadyCheck = false;
+            }
+            yield return null;
+        }
+    }
+
+    //  무기 납도/발도 함수
+    IEnumerator SheatheWeapon()
+    {
+        if (pm.battleReadyCheck && am.GetCurrentAnimatorStateInfo(2).IsName("SwingReady"))
+        {
+            am.SetBool("BattleReadyBool", false);
+            yield return new WaitForSeconds(0.65f);
+            playerWeapon.SetActive(false);
+        }
+        else if(!pm.battleReadyCheck && am.GetCurrentAnimatorStateInfo(1).IsName("IdleState"))
+        {
+            am.SetBool("BattleReadyBool", true);
+            yield return new WaitForSeconds(0.2f);
+            playerWeapon.SetActive(true);
+        }
+        
     }
 }

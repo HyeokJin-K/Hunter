@@ -13,22 +13,27 @@ public class PlayerAnimation : MonoBehaviour
 
     void Start()
     {
-        if (am == null) am = GetComponentInChildren<Animator>();
+        if (am == null) am = GetComponent<Animator>();
         if (ps == null) ps = GetComponent<PlayerMove>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (ps.moveStateCheck)
         {
             PlayerMoveAni();
         }
         else
-            aniValue = Mathf.Lerp(aniValue, 0f, Time.deltaTime * 7.0f);
+            aniValue = Mathf.Lerp(aniValue, 0f, Time.deltaTime * 5.0f);
 
         am.SetFloat("MoveAni", aniValue);
+
+        //  플레이어 공격 애니메이션 경직 테스트용
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            StartCoroutine(StopPlayerAni(0.1f));
+        }
     }
 
     void PlayerMoveAni()
@@ -36,6 +41,26 @@ public class PlayerAnimation : MonoBehaviour
         if (ps.dashStateCheck)
             aniValue = Mathf.Lerp(aniValue, 1f, Time.deltaTime * 2.0f);
         else
-            aniValue = Mathf.Lerp(aniValue, 0.5f, Time.deltaTime * 7.0f);
+            aniValue = Mathf.Lerp(aniValue, 0.5f, Time.deltaTime * 5.0f);
     }
+
+    /// <summary>
+    /// 플레이어 애니메이션을 일정 시간동안 경직시키는 함수
+    /// </summary>
+    /// <param name="stopTime">경직 시간</param>
+    /// <returns></returns>
+    public IEnumerator StopPlayerAni(float stopTime)
+    {
+        float t = 0;
+        while (t < stopTime)
+        {
+            am.SetFloat("AniSpeed", 0f);
+            t += Time.deltaTime;
+            yield return null;
+        }
+
+        am.SetFloat("AniSpeed", 1f);
+        yield return null;
+    }
+
 }

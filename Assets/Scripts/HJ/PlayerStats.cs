@@ -30,11 +30,20 @@ public class PlayerStats : MonoBehaviour
 
     //  플레이어의 현재 행동상태를 체크하는 변수
     [HideInInspector]
+    //  공격 중인 상태
     public bool attackStateCheck;
     [HideInInspector]
+    //  이동 상태
     public bool moveStateCheck;
     [HideInInspector]
+    //  대쉬 상태
     public bool dashStateCheck;
+    [HideInInspector]
+    //  무적 상태
+    public bool invincibleStateCheck;
+    [HideInInspector]
+    //  공격 대기 중인 상태(발도 상태)
+    public bool battleReadyCheck;
 
     private void Awake()
     {

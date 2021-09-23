@@ -24,7 +24,7 @@ public class PlayerMove : PlayerStats
     {        
         playerController = GetComponent<CharacterController>();
 
-        totalMoveSpeed = moveSpeed;
+        totalMoveSpeed = moveSpeed;                
     }
 
     void Update()
@@ -45,9 +45,16 @@ public class PlayerMove : PlayerStats
             if (moveCheck) rotate = Quaternion.LookRotation(new Vector3(move.x, 0, move.z));
 
             //  왼쪽 Shift키 입력시 달리기 함수 실행
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift) &&
+                    !battleReadyCheck)
             {                
                 MoveDash();
+                //  달리기 도중 이동 방향과 바라보는 방향의 각도가 일정 이상 차이가 있을 경우 회전 후 이동하게 한다.
+                if (Vector3.Angle(transform.forward, move) > 150)
+                {
+                    //  코루틴 실행중에는 실행 불가 체크
+                    if (!rotateCorCheck) StartCoroutine(RotateDash());
+                }
             }
             else
             {
@@ -62,14 +69,7 @@ public class PlayerMove : PlayerStats
             moveStateCheck = false;
             dashStateCheck = false;
         }        
-
-        //  달리기 도중 이동 방향과 바라보는 방향의 각도가 일정 이상 차이가 있을 경우 회전 후 이동하게 한다.
-        if (Vector3.Angle(transform.forward, move) > 150 &&
-                    Input.GetKey(KeyCode.LeftShift))
-        {
-            //  코루틴 실행중에는 실행 불가 체크
-            if(!rotateCorCheck) StartCoroutine(RotateDash());
-        }                
+  
     }
 
     private void FixedUpdate()
