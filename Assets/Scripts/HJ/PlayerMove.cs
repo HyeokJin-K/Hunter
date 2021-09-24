@@ -28,7 +28,7 @@ public class PlayerMove : PlayerStats
     }
 
     void Update()
-    {
+    {        
         //  WASD 조작
         if (!attackStateCheck) move = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         else move = Vector3.zero;
@@ -42,7 +42,7 @@ public class PlayerMove : PlayerStats
             //  이동 조작을 입력받았는지를 체크하는 moveCheck 활성화
             moveCheck = true;
             moveStateCheck = true;
-            if (moveCheck) rotate = Quaternion.LookRotation(new Vector3(move.x, 0, move.z));
+            if (moveCheck) rotate = Quaternion.LookRotation(new Vector3(move.x, 0, move.z));            
 
             //  왼쪽 Shift키 입력시 달리기 함수 실행
             if (Input.GetKey(KeyCode.LeftShift) &&
@@ -68,6 +68,7 @@ public class PlayerMove : PlayerStats
             moveCheck = false;
             moveStateCheck = false;
             dashStateCheck = false;
+            rotate = transform.rotation;
         }        
   
     }

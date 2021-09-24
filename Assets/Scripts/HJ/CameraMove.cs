@@ -16,10 +16,18 @@ public class CameraMove : MonoBehaviour
 
     Vector3 pos;
 
+    GameObject originPos;
+    Vector3 targetToOrigin;
+    Ray originRay;
+    RaycastHit hitInfo;
+
     void Start()
     {        
         targetTransform = targetTransform == null ? GameObject.Find("Player").transform : targetTransform;
         pos = targetTransform.position;
+        originPos = new GameObject();
+        originPos.name = "OriginCameraPosObject";
+        
     }
     
     void Update()
@@ -33,7 +41,7 @@ public class CameraMove : MonoBehaviour
         }
 
         //  마우스 휠로 카메라와 타겟 거리 조절
-        distance += -Input.GetAxis("Mouse ScrollWheel");
+        //distance += -Input.GetAxis("Mouse ScrollWheel");
 
         rotateY = Mathf.Clamp(rotateY, -60f, 60f);
         distance = Mathf.Clamp(distance, 1.5f, 4.5f);
@@ -41,8 +49,14 @@ public class CameraMove : MonoBehaviour
         //  카메라 쉐이크 테스트용
         if (Input.GetKeyDown(KeyCode.P))
         {
-            StartCoroutine(CameraShake(1f, 1f));
+            StartCoroutine(CameraShake(0.5f, 1.5f));
         }
+
+        //  카메라와 타겟 사이 Ray
+        originPos.transform.position = pos + transform.rotation * new Vector3(0, 0.8f, -distance);
+        targetToOrigin = originPos.transform.position - targetTransform.position;
+        originRay = new Ray(targetTransform.position, targetToOrigin);
+        Debug.DrawRay(targetTransform.position, targetToOrigin, Color.red);
     }
     
     void FixedUpdate()
@@ -56,7 +70,13 @@ public class CameraMove : MonoBehaviour
     private void LateUpdate()
     {                
         transform.rotation = Quaternion.Euler(-rotateY, rotateX, 0);                
-        transform.position = pos + transform.rotation * new Vector3(0, 1, -distance);
+        transform.position = pos + transform.rotation * new Vector3(0, 0.8f, -distance);
+
+        //  카메라와 타겟 사이에 장애물이 있을 경우 카메라 위치를 변경
+        if (Physics.Raycast(originRay, out hitInfo, targetToOrigin.magnitude, 1 << LayerMask.NameToLayer("Obstacle")))
+        {
+            transform.position = hitInfo.point;
+        }
     }
 
     /// <summary>
@@ -72,17 +92,16 @@ public class CameraMove : MonoBehaviour
     /// 카메라 떨림(쉐이크) 함수
     /// </summary>
     /// <param name="shakeTime">얼마나 오래 카메라 떨림(쉐이크)이 나타날지 설정하는 시간 값</param>
-    /// <param name="shakePower">카메라 떨림(쉐이크)의 강도 값 (최소값 0 최대값 1)</param>
+    /// <param name="shakePower">카메라 떨림(쉐이크)의 강도 값 (최소값 0 최대값 1.5)</param>
     /// <returns></returns>
     public IEnumerator CameraShake(float shakeTime, float shakePower)
-    {
-        
+    {        
         float t = 0;
-        float p = Mathf.Clamp(shakePower, 0f, 1f) / 10f;        
+        float p = -Mathf.Clamp(shakePower, 0f, 1.5f) / 10f;        
         while(t < shakeTime)
         {
             pos += new Vector3(0, p, 0);
-            p *= -1f;
+            p *= -1f * 0.95f;
             t += Time.deltaTime;
             yield return null;
         }        

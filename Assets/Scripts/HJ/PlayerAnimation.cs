@@ -25,7 +25,7 @@ public class PlayerAnimation : MonoBehaviour
             PlayerMoveAni();
         }
         else
-            aniValue = Mathf.Lerp(aniValue, 0f, Time.deltaTime * 5.0f);
+            aniValue = Mathf.Lerp(aniValue, 0f, Time.deltaTime * 3.0f);
 
         am.SetFloat("MoveAni", aniValue);
 
